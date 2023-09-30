@@ -1,0 +1,375 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: rgb(27, 11, 44);
+    color: #fff;
+    font-family: sans-serif;
+    z-index: -1;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .2rem;
+}
+h2{
+    margin-left: 20px;
+    margin-top: 4rem;
+}
+
+section{
+    margin-left: 20px;
+}
+
+.header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid white;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar img{
+    height: 90px;
+}
+.navbar .links{
+    margin-left: 18px;
+    font-size: 22px;
+    gap: 60px;
+    display: flex;
+}
+
+.searchbar{
+    margin-right: 120px;
+    display: flex;
+    gap: 32px;
+}
+.searchbar input{
+    padding: 6px;
+    background-color: rgb(174, 228, 228);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.searchbar i{
+    font-size: 28px;
+}
+
+aside{
+    border-left: 2px solid white;
+    position: relative;
+}
+
+/* _______________________________________________________Left section of aside start________________________________________________________ */
+
+aside .left{
+    position: relative;
+    float: left;
+    width: 69vw;
+    margin-right: 0px;
+}
+.left .home{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,0px);
+    gap: 8px;
+    width: 68vw;
+    height: 300px;
+    margin-top: 110px;
+
+}
+
+.left .home div a img{
+    width: 340px;
+    height: 280px;
+}
+.left .home div a img:hover{
+    scale: 1.04;
+    opacity: 0.7;
+}
+
+.play{
+    position: relative;
+    /* border: 2px solid rgb(10, 227, 13); */
+    width: 68vw;
+    height: 310px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,90px);
+    top: 10px;
+    gap: 20px;
+}
+
+.play .playsong{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 28px;
+    height: 90px;
+
+}
+
+.play .playsong .playimg{
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.play .playsong .playimg a img{
+    width: 120px;
+    height: 100%;
+}
+
+.play .playsong .playimg a img:hover{
+    opacity: 0.4;
+}
+
+
+.play .playsong .playimg i{
+    position: absolute;
+    left: 25%;
+    top: 48%;
+    transform: scale(0);
+}
+
+.play .playsong .playimg:hover i{
+    transform: scale(1.2);
+}
+
+.play .playsong .playimg span{
+    margin-top: 22px;
+    margin-left: 18px;
+}
+.play .playsong .time{
+    position: relative;
+    top: 20px;
+    right: 40px;
+}
+
+
+
+.art1{
+    position: relative;
+    /* border: 2px solid rgb(10, 227, 13); */
+    width: 68vw;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(15,90px);
+    grid-template-rows: repeat(1,90px);
+    top: 10px;
+    gap: 20px;
+    overflow-x: auto;
+    gap: 12px;
+    cursor: pointer;
+}
+.art1::-webkit-scrollbar{
+    width: 0px;
+}
+
+.art1 .art11>h3{
+    color: white;
+    margin-left: 22px;
+
+}
+
+
+.art11 a{
+    text-decoration: none;
+}  
+.art1 .art11 a img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.art2{
+    position: relative;
+    /* border: 2px solid rgb(10, 227, 13); */
+    width: 68vw;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(15,90px);
+    grid-template-rows: repeat(1,90px);
+    /* top: 10px;
+    gap: 20px; */
+    overflow-x: auto;
+    gap: 12px;
+    cursor: pointer;
+}
+.art2::-webkit-scrollbar{
+    width: 0px;
+}
+.art2 .art12{
+    margin-top: 20px;
+}
+
+.art2 .art12>h3{
+    color: white;
+    margin-left: 22px;
+
+}
+
+
+.art12 a{
+    text-decoration: none;
+}  
+.art2 .art12 a img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.english{
+    position: relative;
+    width: 68vw;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(15,110px);
+    grid-template-rows: repeat(1,90px);
+    top: 10px;
+    overflow-x: auto;
+    gap: 8px;
+    cursor: pointer;
+
+}
+.english::-webkit-scrollbar{
+    width: 0px;
+}
+.english .engsong a img{
+    width: 110px;
+    height: 90px;
+}
+
+
+.english .engsong a img:hover{
+    opacity: 40%;
+    cursor: pointer;
+
+}
+
+.english .engsong>h4{
+    margin-left: 18px;
+}
+
+.hindi{
+    position: relative;
+    width: 68vw;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(15,110px);
+    grid-template-rows: repeat(1,90px);
+    overflow-x: auto;
+    gap: 2px;
+    cursor: pointer;
+}
+.hindi::-webkit-scrollbar{
+    width: 0px;
+}
+
+.hindi .hindisong{
+    position: relative;
+    width: 100%;
+}
+
+.hindi .hindisong a img{
+    width: 110px;
+    height: 90px;
+}
+.hindi .hindisong a img:hover{
+    opacity: 40%;
+
+}
+
+.hindi .hindisong>h4{
+    margin-left: 18px;
+}
+
+/* ________________________________________________________right section of aside_____________________________________________________________ */
+
+.right{
+    float: right;
+    width: 30vw;
+    /* border-right: 1px solid #fff; */
+    position: relative;
+    height: 250vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 0px;
+}
+#right{
+    margin-top: 110px;
+    position: relative;
+    border-left: 1px solid #fff;
+    height: 300vh;
+
+}
+.right::-webkit-scrollbar{
+    height: 0;
+}
+
+.right .top{
+
+    position: fixed;
+    top: 90px;
+    left: 72vw;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    /* border: 2px solid orange; */
+    align-items: center;
+    z-index: 1000;
+}
+
+.right .top #Queue{
+    font-size: 2rem;
+}
+.right .top select{
+    margin-right: 2rem;
+    font-size: 1.6rem;
+    border: none;
+}
+
+
+.right .playlist{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    top: 42px;
+    left: 1.2rem;
+    /* border: 2px solid yellow; */
+}
+
+
+.right .playlist .playsongs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right .playlist .playsongs a img{
+    width: 90px;
+    height: 90px;
+}
+
+.right .playlist a i{
+    margin-right: 2rem;
+}
